@@ -16,7 +16,7 @@ st.write("This app loads your trained Q-learning model and simulates the robot n
 @st.cache_resource
 def load_model():
     try:
-        with open('warehouse_robot_model.pkl', 'rb') as f:
+        with open('warehouse_robot_modell.pkl', 'rb') as f:
             model_data = pickle.load(f)
         return model_data
     except FileNotFoundError:
